@@ -1,0 +1,1672 @@
+[
+  {
+    "id": "nyc-2010",
+    "year": 2010,
+    "race": "NYC Marathon",
+    "date": "2010-11-07",
+    "finish": "3:38:00",
+    "half": "1:44:10",
+    "split": "+9:50",
+    "context": "First marathon",
+    "goal": true,
+    "cycle": null
+  },
+  {
+    "id": "nyc-2011",
+    "year": 2011,
+    "race": "NYC Marathon",
+    "date": "2011-11-06",
+    "finish": "3:34:41",
+    "half": "1:43:10",
+    "split": "+8:21",
+    "context": "Improved durability",
+    "goal": true,
+    "cycle": null
+  },
+  {
+    "id": "nyc-2013",
+    "year": 2013,
+    "race": "NYC Marathon",
+    "date": "2013-11-03",
+    "finish": "3:29:20",
+    "half": "1:43:30",
+    "split": "+2:20",
+    "context": "Breakthrough",
+    "goal": true,
+    "cycle": {
+      "start": "2013-07-28",
+      "totalMiles": 485.2,
+      "avgWeek": 34.7,
+      "peakWeek": 66.9,
+      "runs": 66,
+      "activeDays": 59,
+      "runs10": 12,
+      "runs12": 8,
+      "runs14": 7,
+      "runs18": 2,
+      "runs20": 0,
+      "longest": 19.2,
+      "weekly": [
+        {
+          "week": "2013-07-28",
+          "miles": 19.0,
+          "runs": 3,
+          "longest": 8.0
+        },
+        {
+          "week": "2013-08-04",
+          "miles": 18.7,
+          "runs": 3,
+          "longest": 10.5
+        },
+        {
+          "week": "2013-08-11",
+          "miles": 22.3,
+          "runs": 3,
+          "longest": 11.1
+        },
+        {
+          "week": "2013-08-18",
+          "miles": 48.5,
+          "runs": 7,
+          "longest": 14.2
+        },
+        {
+          "week": "2013-08-25",
+          "miles": 25.5,
+          "runs": 4,
+          "longest": 6.9
+        },
+        {
+          "week": "2013-09-01",
+          "miles": 29.4,
+          "runs": 5,
+          "longest": 8.1
+        },
+        {
+          "week": "2013-09-08",
+          "miles": 64.5,
+          "runs": 7,
+          "longest": 18.1
+        },
+        {
+          "week": "2013-09-15",
+          "miles": 36.2,
+          "runs": 5,
+          "longest": 9.6
+        },
+        {
+          "week": "2013-09-22",
+          "miles": 66.9,
+          "runs": 7,
+          "longest": 17.5
+        },
+        {
+          "week": "2013-09-29",
+          "miles": 33.7,
+          "runs": 6,
+          "longest": 7.1
+        },
+        {
+          "week": "2013-10-06",
+          "miles": 52.7,
+          "runs": 5,
+          "longest": 19.2
+        },
+        {
+          "week": "2013-10-13",
+          "miles": 31.3,
+          "runs": 3,
+          "longest": 15.2
+        },
+        {
+          "week": "2013-10-20",
+          "miles": 24.8,
+          "runs": 4,
+          "longest": 9.3
+        },
+        {
+          "week": "2013-10-27",
+          "miles": 11.6,
+          "runs": 4,
+          "longest": 6.7
+        }
+      ],
+      "notable": [
+        {
+          "date": "2013-10-12",
+          "name": "Ouch",
+          "miles": 19.2,
+          "pace": 8.48
+        },
+        {
+          "date": "2013-09-14",
+          "name": "Awesome Fast Finish Long Run",
+          "miles": 18.06,
+          "pace": 8.32
+        },
+        {
+          "date": "2013-09-28",
+          "name": "Queensboro Long Run",
+          "miles": 17.51,
+          "pace": 8.4
+        },
+        {
+          "date": "2013-09-09",
+          "name": "Coney Island Long Run",
+          "miles": 15.63,
+          "pace": 9.22
+        },
+        {
+          "date": "2013-10-19",
+          "name": "Final Long Run",
+          "miles": 15.21,
+          "pace": 8.08
+        },
+        {
+          "date": "2013-09-22",
+          "name": "Little Rhody Long Run",
+          "miles": 15.01,
+          "pace": 8.77
+        },
+        {
+          "date": "2013-08-23",
+          "name": "Bay Ridge Long Run",
+          "miles": 14.2,
+          "pace": 8.8
+        },
+        {
+          "date": "2013-10-06",
+          "name": "Grete's Great Gallop",
+          "miles": 13.1,
+          "pace": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "nyc-2014",
+    "year": 2014,
+    "race": "NYC Marathon",
+    "date": "2014-11-02",
+    "finish": "3:18:12",
+    "half": "1:38:37",
+    "split": "+0:58",
+    "context": "Career PR",
+    "goal": true,
+    "cycle": {
+      "start": "2014-07-27",
+      "totalMiles": 565.8,
+      "avgWeek": 40.4,
+      "peakWeek": 50.4,
+      "runs": 75,
+      "activeDays": 70,
+      "runs10": 17,
+      "runs12": 8,
+      "runs14": 5,
+      "runs18": 1,
+      "runs20": 0,
+      "longest": 19.38,
+      "weekly": [
+        {
+          "week": "2014-07-27",
+          "miles": 31.1,
+          "runs": 5,
+          "longest": 8.6
+        },
+        {
+          "week": "2014-08-03",
+          "miles": 34.8,
+          "runs": 4,
+          "longest": 12.8
+        },
+        {
+          "week": "2014-08-10",
+          "miles": 35.1,
+          "runs": 5,
+          "longest": 8.4
+        },
+        {
+          "week": "2014-08-17",
+          "miles": 43.3,
+          "runs": 5,
+          "longest": 14.0
+        },
+        {
+          "week": "2014-08-24",
+          "miles": 40.9,
+          "runs": 6,
+          "longest": 10.2
+        },
+        {
+          "week": "2014-08-31",
+          "miles": 46.4,
+          "runs": 7,
+          "longest": 15.7
+        },
+        {
+          "week": "2014-09-07",
+          "miles": 40.3,
+          "runs": 6,
+          "longest": 10.3
+        },
+        {
+          "week": "2014-09-14",
+          "miles": 46.3,
+          "runs": 5,
+          "longest": 16.8
+        },
+        {
+          "week": "2014-09-21",
+          "miles": 43.7,
+          "runs": 5,
+          "longest": 12.2
+        },
+        {
+          "week": "2014-09-28",
+          "miles": 40.0,
+          "runs": 4,
+          "longest": 17.3
+        },
+        {
+          "week": "2014-10-05",
+          "miles": 50.4,
+          "runs": 7,
+          "longest": 13.3
+        },
+        {
+          "week": "2014-10-12",
+          "miles": 47.8,
+          "runs": 7,
+          "longest": 11.3
+        },
+        {
+          "week": "2014-10-19",
+          "miles": 47.2,
+          "runs": 5,
+          "longest": 19.4
+        },
+        {
+          "week": "2014-10-26",
+          "miles": 18.6,
+          "runs": 4,
+          "longest": 6.6
+        }
+      ],
+      "notable": [
+        {
+          "date": "2014-10-19",
+          "name": "Last Long Run",
+          "miles": 19.38,
+          "pace": 7.88
+        },
+        {
+          "date": "2014-09-28",
+          "name": "Marathon route and back down the east side",
+          "miles": 17.31,
+          "pace": 7.98
+        },
+        {
+          "date": "2014-09-14",
+          "name": "South Brooklyn loop",
+          "miles": 16.78,
+          "pace": 8.03
+        },
+        {
+          "date": "2014-09-01",
+          "name": "Coney and back",
+          "miles": 15.66,
+          "pace": 7.97
+        },
+        {
+          "date": "2014-08-17",
+          "name": "Verrazano long run",
+          "miles": 14.01,
+          "pace": 7.88
+        },
+        {
+          "date": "2014-10-05",
+          "name": "Grete's Great Gallop - 13.1m",
+          "miles": 13.33,
+          "pace": 6.77
+        },
+        {
+          "date": "2014-08-03",
+          "name": "Bridges",
+          "miles": 12.81,
+          "pace": 8.12
+        },
+        {
+          "date": "2014-09-21",
+          "name": "Bridges",
+          "miles": 12.23,
+          "pace": 7.98
+        }
+      ]
+    }
+  },
+  {
+    "id": "nyc-2015",
+    "year": 2015,
+    "race": "NYC Marathon",
+    "date": "2015-11-01",
+    "finish": "3:28:51",
+    "half": null,
+    "split": "+8:49",
+    "context": "Second marathon after Suffolk County",
+    "goal": false,
+    "cycle": null
+  },
+  {
+    "id": "nyc-2016",
+    "year": 2016,
+    "race": "NYC Marathon",
+    "date": "2016-11-06",
+    "finish": "3:46:16",
+    "half": null,
+    "split": null,
+    "context": "Injury-affected",
+    "goal": false,
+    "cycle": null
+  },
+  {
+    "id": "nyc-2017",
+    "year": 2017,
+    "race": "NYC Marathon",
+    "date": "2017-11-05",
+    "finish": "3:37:43",
+    "half": "1:44:37",
+    "split": "+8:29",
+    "context": "Rebuild year",
+    "goal": true,
+    "cycle": null
+  },
+  {
+    "id": "nyc-2018",
+    "year": 2018,
+    "race": "NYC Marathon",
+    "date": "2018-11-04",
+    "finish": "3:36:58",
+    "half": "1:43:34",
+    "split": "+9:50",
+    "context": "Stable plateau",
+    "goal": true,
+    "cycle": {
+      "start": "2018-07-29",
+      "totalMiles": 659.7,
+      "avgWeek": 47.1,
+      "peakWeek": 66.2,
+      "runs": 97,
+      "activeDays": 81,
+      "runs10": 18,
+      "runs12": 7,
+      "runs14": 4,
+      "runs18": 1,
+      "runs20": 0,
+      "longest": 19.01,
+      "weekly": [
+        {
+          "week": "2018-07-29",
+          "miles": 32.2,
+          "runs": 8,
+          "longest": 7.1
+        },
+        {
+          "week": "2018-08-05",
+          "miles": 28.6,
+          "runs": 6,
+          "longest": 8.4
+        },
+        {
+          "week": "2018-08-12",
+          "miles": 48.3,
+          "runs": 8,
+          "longest": 10.1
+        },
+        {
+          "week": "2018-08-19",
+          "miles": 54.1,
+          "runs": 9,
+          "longest": 14.1
+        },
+        {
+          "week": "2018-08-26",
+          "miles": 39.4,
+          "runs": 6,
+          "longest": 8.8
+        },
+        {
+          "week": "2018-09-02",
+          "miles": 53.2,
+          "runs": 6,
+          "longest": 16.1
+        },
+        {
+          "week": "2018-09-09",
+          "miles": 51.2,
+          "runs": 8,
+          "longest": 10.4
+        },
+        {
+          "week": "2018-09-16",
+          "miles": 66.2,
+          "runs": 6,
+          "longest": 17.0
+        },
+        {
+          "week": "2018-09-23",
+          "miles": 59.6,
+          "runs": 7,
+          "longest": 12.1
+        },
+        {
+          "week": "2018-09-30",
+          "miles": 59.1,
+          "runs": 7,
+          "longest": 19.0
+        },
+        {
+          "week": "2018-10-07",
+          "miles": 44.1,
+          "runs": 6,
+          "longest": 11.6
+        },
+        {
+          "week": "2018-10-14",
+          "miles": 51.5,
+          "runs": 8,
+          "longest": 13.2
+        },
+        {
+          "week": "2018-10-21",
+          "miles": 48.9,
+          "runs": 7,
+          "longest": 10.3
+        },
+        {
+          "week": "2018-10-28",
+          "miles": 23.2,
+          "runs": 5,
+          "longest": 9.0
+        }
+      ],
+      "notable": [
+        {
+          "date": "2018-09-30",
+          "name": "Long Progression run to MP",
+          "miles": 19.01,
+          "pace": 8.35
+        },
+        {
+          "date": "2018-09-16",
+          "name": "Still waiting for a strong and confident long run. This was not it.",
+          "miles": 17.03,
+          "pace": 8.83
+        },
+        {
+          "date": "2018-09-02",
+          "name": "the struggle is real",
+          "miles": 16.08,
+          "pace": 8.74
+        },
+        {
+          "date": "2018-08-19",
+          "name": "Progression to MP",
+          "miles": 14.11,
+          "pace": 8.36
+        },
+        {
+          "date": "2018-09-21",
+          "name": "Slow and steady aerobic pace",
+          "miles": 13.31,
+          "pace": 9.31
+        },
+        {
+          "date": "2018-10-14",
+          "name": "Staten Island Half- PR in bathroom breaks",
+          "miles": 13.19,
+          "pace": 7.4
+        },
+        {
+          "date": "2018-09-24",
+          "name": "Morning Run",
+          "miles": 12.1,
+          "pace": 9.34
+        },
+        {
+          "date": "2018-10-08",
+          "name": "Afternoon Run",
+          "miles": 11.56,
+          "pace": 9.11
+        }
+      ]
+    }
+  },
+  {
+    "id": "nyc-2019",
+    "year": 2019,
+    "race": "NYC Marathon",
+    "date": "2019-11-03",
+    "finish": "3:38:13",
+    "half": "1:47:08",
+    "split": "+4:57",
+    "context": "Conservative opening",
+    "goal": true,
+    "cycle": {
+      "start": "2019-07-28",
+      "totalMiles": 614.5,
+      "avgWeek": 43.9,
+      "peakWeek": 62.6,
+      "runs": 97,
+      "activeDays": 88,
+      "runs10": 8,
+      "runs12": 6,
+      "runs14": 5,
+      "runs18": 3,
+      "runs20": 1,
+      "longest": 20.01,
+      "weekly": [
+        {
+          "week": "2019-07-28",
+          "miles": 26.3,
+          "runs": 6,
+          "longest": 7.3
+        },
+        {
+          "week": "2019-08-04",
+          "miles": 35.0,
+          "runs": 8,
+          "longest": 7.7
+        },
+        {
+          "week": "2019-08-11",
+          "miles": 34.1,
+          "runs": 8,
+          "longest": 11.7
+        },
+        {
+          "week": "2019-08-18",
+          "miles": 45.0,
+          "runs": 7,
+          "longest": 10.0
+        },
+        {
+          "week": "2019-08-25",
+          "miles": 50.3,
+          "runs": 7,
+          "longest": 14.2
+        },
+        {
+          "week": "2019-09-01",
+          "miles": 36.5,
+          "runs": 6,
+          "longest": 8.1
+        },
+        {
+          "week": "2019-09-08",
+          "miles": 62.6,
+          "runs": 8,
+          "longest": 18.3
+        },
+        {
+          "week": "2019-09-15",
+          "miles": 52.6,
+          "runs": 7,
+          "longest": 15.2
+        },
+        {
+          "week": "2019-09-22",
+          "miles": 59.6,
+          "runs": 7,
+          "longest": 20.0
+        },
+        {
+          "week": "2019-09-29",
+          "miles": 53.3,
+          "runs": 9,
+          "longest": 8.7
+        },
+        {
+          "week": "2019-10-06",
+          "miles": 44.8,
+          "runs": 7,
+          "longest": 8.8
+        },
+        {
+          "week": "2019-10-13",
+          "miles": 60.2,
+          "runs": 7,
+          "longest": 19.0
+        },
+        {
+          "week": "2019-10-20",
+          "miles": 41.2,
+          "runs": 6,
+          "longest": 8.4
+        },
+        {
+          "week": "2019-10-27",
+          "miles": 13.2,
+          "runs": 4,
+          "longest": 6.5
+        }
+      ],
+      "notable": [
+        {
+          "date": "2019-09-28",
+          "name": "Tender is the legs",
+          "miles": 20.01,
+          "pace": 8.61
+        },
+        {
+          "date": "2019-10-19",
+          "name": "Hay, Barn Doors, etc",
+          "miles": 19.01,
+          "pace": 8.67
+        },
+        {
+          "date": "2019-09-14",
+          "name": "Coney Money",
+          "miles": 18.26,
+          "pace": 8.92
+        },
+        {
+          "date": "2019-09-21",
+          "name": "Morning Run",
+          "miles": 15.17,
+          "pace": 9.22
+        },
+        {
+          "date": "2019-08-31",
+          "name": "Brighton Beach",
+          "miles": 14.25,
+          "pace": 8.76
+        },
+        {
+          "date": "2019-10-13",
+          "name": "Staten Island Half ",
+          "miles": 13.16,
+          "pace": 7.43
+        },
+        {
+          "date": "2019-08-17",
+          "name": "Vacation tax",
+          "miles": 11.71,
+          "pace": 8.94
+        },
+        {
+          "date": "2019-08-24",
+          "name": "Milford CT",
+          "miles": 10.02,
+          "pace": 8.83
+        }
+      ]
+    }
+  },
+  {
+    "id": "nyc-2021",
+    "year": 2021,
+    "race": "NYC Marathon",
+    "date": "2021-11-07",
+    "finish": "3:40:27",
+    "half": "1:49:10",
+    "split": "+2:07",
+    "context": "Pandemic comeback",
+    "goal": true,
+    "cycle": {
+      "start": "2021-08-01",
+      "totalMiles": 643.4,
+      "avgWeek": 46.0,
+      "peakWeek": 66.4,
+      "runs": 93,
+      "activeDays": 90,
+      "runs10": 12,
+      "runs12": 8,
+      "runs14": 6,
+      "runs18": 5,
+      "runs20": 0,
+      "longest": 19.04,
+      "weekly": [
+        {
+          "week": "2021-08-01",
+          "miles": 48.7,
+          "runs": 9,
+          "longest": 10.0
+        },
+        {
+          "week": "2021-08-08",
+          "miles": 41.7,
+          "runs": 6,
+          "longest": 10.0
+        },
+        {
+          "week": "2021-08-15",
+          "miles": 44.8,
+          "runs": 6,
+          "longest": 13.2
+        },
+        {
+          "week": "2021-08-22",
+          "miles": 39.0,
+          "runs": 6,
+          "longest": 10.4
+        },
+        {
+          "week": "2021-08-29",
+          "miles": 34.6,
+          "runs": 6,
+          "longest": 7.1
+        },
+        {
+          "week": "2021-09-05",
+          "miles": 48.0,
+          "runs": 6,
+          "longest": 14.7
+        },
+        {
+          "week": "2021-09-12",
+          "miles": 30.8,
+          "runs": 7,
+          "longest": 8.0
+        },
+        {
+          "week": "2021-09-19",
+          "miles": 50.4,
+          "runs": 7,
+          "longest": 13.2
+        },
+        {
+          "week": "2021-09-26",
+          "miles": 66.4,
+          "runs": 7,
+          "longest": 18.2
+        },
+        {
+          "week": "2021-10-03",
+          "miles": 57.0,
+          "runs": 7,
+          "longest": 18.0
+        },
+        {
+          "week": "2021-10-10",
+          "miles": 49.9,
+          "runs": 7,
+          "longest": 9.0
+        },
+        {
+          "week": "2021-10-17",
+          "miles": 55.7,
+          "runs": 7,
+          "longest": 19.0
+        },
+        {
+          "week": "2021-10-24",
+          "miles": 53.6,
+          "runs": 7,
+          "longest": 18.4
+        },
+        {
+          "week": "2021-10-31",
+          "miles": 22.8,
+          "runs": 5,
+          "longest": 10.1
+        }
+      ],
+      "notable": [
+        {
+          "date": "2021-10-17",
+          "name": "Morning Run",
+          "miles": 19.04,
+          "pace": 8.6
+        },
+        {
+          "date": "2021-10-24",
+          "name": "Fast finish long run",
+          "miles": 18.44,
+          "pace": 8.27
+        },
+        {
+          "date": "2021-10-02",
+          "name": "beaches",
+          "miles": 18.25,
+          "pace": 8.81
+        },
+        {
+          "date": "2021-10-09",
+          "name": "have a great race, chicago runners!",
+          "miles": 18.01,
+          "pace": 8.48
+        },
+        {
+          "date": "2021-09-26",
+          "name": "Morning Run",
+          "miles": 18.01,
+          "pace": 8.94
+        },
+        {
+          "date": "2021-09-05",
+          "name": "Morning Run",
+          "miles": 14.7,
+          "pace": 8.97
+        },
+        {
+          "date": "2021-09-19",
+          "name": "california dreamin",
+          "miles": 13.25,
+          "pace": 9.01
+        },
+        {
+          "date": "2021-08-20",
+          "name": "Morning Run",
+          "miles": 13.2,
+          "pace": 8.82
+        }
+      ]
+    }
+  },
+  {
+    "id": "nyc-2022",
+    "year": 2022,
+    "race": "NYC Marathon",
+    "date": "2022-11-06",
+    "finish": "3:42:27",
+    "half": "1:48:19",
+    "split": "+5:49",
+    "context": "Hot conditions",
+    "goal": true,
+    "cycle": {
+      "start": "2022-07-31",
+      "totalMiles": 661.2,
+      "avgWeek": 47.2,
+      "peakWeek": 63.5,
+      "runs": 86,
+      "activeDays": 81,
+      "runs10": 18,
+      "runs12": 9,
+      "runs14": 6,
+      "runs18": 5,
+      "runs20": 0,
+      "longest": 18.82,
+      "weekly": [
+        {
+          "week": "2022-07-31",
+          "miles": 14.7,
+          "runs": 5,
+          "longest": 6.4
+        },
+        {
+          "week": "2022-08-07",
+          "miles": 51.0,
+          "runs": 7,
+          "longest": 10.6
+        },
+        {
+          "week": "2022-08-14",
+          "miles": 36.0,
+          "runs": 5,
+          "longest": 11.1
+        },
+        {
+          "week": "2022-08-21",
+          "miles": 44.0,
+          "runs": 5,
+          "longest": 12.6
+        },
+        {
+          "week": "2022-08-28",
+          "miles": 37.4,
+          "runs": 6,
+          "longest": 7.4
+        },
+        {
+          "week": "2022-09-04",
+          "miles": 50.7,
+          "runs": 6,
+          "longest": 14.2
+        },
+        {
+          "week": "2022-09-11",
+          "miles": 61.9,
+          "runs": 8,
+          "longest": 18.1
+        },
+        {
+          "week": "2022-09-18",
+          "miles": 48.9,
+          "runs": 6,
+          "longest": 10.3
+        },
+        {
+          "week": "2022-09-25",
+          "miles": 63.5,
+          "runs": 8,
+          "longest": 18.4
+        },
+        {
+          "week": "2022-10-02",
+          "miles": 60.6,
+          "runs": 6,
+          "longest": 18.3
+        },
+        {
+          "week": "2022-10-09",
+          "miles": 61.7,
+          "runs": 7,
+          "longest": 18.2
+        },
+        {
+          "week": "2022-10-16",
+          "miles": 62.8,
+          "runs": 7,
+          "longest": 18.8
+        },
+        {
+          "week": "2022-10-23",
+          "miles": 47.4,
+          "runs": 6,
+          "longest": 11.7
+        },
+        {
+          "week": "2022-10-30",
+          "miles": 20.5,
+          "runs": 4,
+          "longest": 8.3
+        }
+      ],
+      "notable": [
+        {
+          "date": "2022-10-22",
+          "name": "10 even steven, 7 progression",
+          "miles": 18.82,
+          "pace": 8.3
+        },
+        {
+          "date": "2022-09-25",
+          "name": "Berlin inspired long run",
+          "miles": 18.37,
+          "pace": 8.63
+        },
+        {
+          "date": "2022-10-08",
+          "name": "16 mile progression - LETS GO METS!",
+          "miles": 18.34,
+          "pace": 8.29
+        },
+        {
+          "date": "2022-10-15",
+          "name": "Even effort, fast finish",
+          "miles": 18.22,
+          "pace": 8.34
+        },
+        {
+          "date": "2022-09-17",
+          "name": "Lunch Run",
+          "miles": 18.06,
+          "pace": 9.11
+        },
+        {
+          "date": "2022-09-04",
+          "name": "Morning Run",
+          "miles": 14.2,
+          "pace": 9.17
+        },
+        {
+          "date": "2022-09-11",
+          "name": "Morning Run",
+          "miles": 12.91,
+          "pace": 9.16
+        },
+        {
+          "date": "2022-08-26",
+          "name": "rough one",
+          "miles": 12.55,
+          "pace": 9.38
+        }
+      ]
+    }
+  },
+  {
+    "id": "jersey-city-2023",
+    "year": 2023,
+    "race": "Jersey City Marathon",
+    "date": "2023-04-23",
+    "finish": "3:31:20",
+    "half": null,
+    "split": null,
+    "context": "Masters resurgence; age grade 64.52%",
+    "goal": true,
+    "cycle": {
+      "start": "2023-01-15",
+      "totalMiles": 621.9,
+      "avgWeek": 44.4,
+      "peakWeek": 70.6,
+      "runs": 81,
+      "activeDays": 81,
+      "runs10": 13,
+      "runs12": 10,
+      "runs14": 6,
+      "runs18": 3,
+      "runs20": 0,
+      "longest": 19.28,
+      "weekly": [
+        {
+          "week": "2023-01-15",
+          "miles": 41.2,
+          "runs": 6,
+          "longest": 12.1
+        },
+        {
+          "week": "2023-01-22",
+          "miles": 37.1,
+          "runs": 6,
+          "longest": 7.3
+        },
+        {
+          "week": "2023-01-29",
+          "miles": 2.9,
+          "runs": 1,
+          "longest": 2.9
+        },
+        {
+          "week": "2023-02-05",
+          "miles": 44.7,
+          "runs": 6,
+          "longest": 12.4
+        },
+        {
+          "week": "2023-02-12",
+          "miles": 45.9,
+          "runs": 6,
+          "longest": 13.2
+        },
+        {
+          "week": "2023-02-19",
+          "miles": 48.4,
+          "runs": 6,
+          "longest": 14.4
+        },
+        {
+          "week": "2023-02-26",
+          "miles": 46.8,
+          "runs": 7,
+          "longest": 8.6
+        },
+        {
+          "week": "2023-03-05",
+          "miles": 52.1,
+          "runs": 6,
+          "longest": 15.6
+        },
+        {
+          "week": "2023-03-12",
+          "miles": 45.1,
+          "runs": 7,
+          "longest": 9.6
+        },
+        {
+          "week": "2023-03-19",
+          "miles": 51.0,
+          "runs": 6,
+          "longest": 16.2
+        },
+        {
+          "week": "2023-03-26",
+          "miles": 58.8,
+          "runs": 6,
+          "longest": 18.1
+        },
+        {
+          "week": "2023-04-02",
+          "miles": 70.6,
+          "runs": 6,
+          "longest": 19.3
+        },
+        {
+          "week": "2023-04-09",
+          "miles": 50.2,
+          "runs": 6,
+          "longest": 12.1
+        },
+        {
+          "week": "2023-04-16",
+          "miles": 27.0,
+          "runs": 6,
+          "longest": 8.8
+        }
+      ],
+      "notable": [
+        {
+          "date": "2023-04-02",
+          "name": "an easy 9+1 and the sunday stroll home",
+          "miles": 19.28,
+          "pace": 8.48
+        },
+        {
+          "date": "2023-04-08",
+          "name": "10 steady, 7 @ MP",
+          "miles": 18.53,
+          "pace": 8.09
+        },
+        {
+          "date": "2023-03-26",
+          "name": "Jersey City Marathon Preview",
+          "miles": 18.15,
+          "pace": 8.71
+        },
+        {
+          "date": "2023-03-19",
+          "name": "Morning Run",
+          "miles": 16.23,
+          "pace": 8.9
+        },
+        {
+          "date": "2023-03-11",
+          "name": "Morning Run",
+          "miles": 15.58,
+          "pace": 9.02
+        },
+        {
+          "date": "2023-02-25",
+          "name": "al gordon + 10",
+          "miles": 14.42,
+          "pace": 8.78
+        },
+        {
+          "date": "2023-02-18",
+          "name": "Morning Run",
+          "miles": 13.22,
+          "pace": 8.96
+        },
+        {
+          "date": "2023-02-11",
+          "name": "Morning Run",
+          "miles": 12.43,
+          "pace": 8.87
+        }
+      ]
+    }
+  },
+  {
+    "id": "nyc-2023",
+    "year": 2023,
+    "race": "NYC Marathon",
+    "date": "2023-11-05",
+    "finish": "3:43:39",
+    "half": "1:48:15",
+    "split": "+7:09",
+    "context": "Second marathon of year",
+    "goal": false,
+    "cycle": {
+      "start": "2023-07-30",
+      "totalMiles": 627.5,
+      "avgWeek": 44.8,
+      "peakWeek": 60.0,
+      "runs": 88,
+      "activeDays": 82,
+      "runs10": 12,
+      "runs12": 10,
+      "runs14": 6,
+      "runs18": 3,
+      "runs20": 0,
+      "longest": 19.73,
+      "weekly": [
+        {
+          "week": "2023-07-30",
+          "miles": 51.5,
+          "runs": 8,
+          "longest": 13.4
+        },
+        {
+          "week": "2023-08-06",
+          "miles": 22.7,
+          "runs": 5,
+          "longest": 6.8
+        },
+        {
+          "week": "2023-08-13",
+          "miles": 57.0,
+          "runs": 6,
+          "longest": 16.0
+        },
+        {
+          "week": "2023-08-20",
+          "miles": 41.3,
+          "runs": 6,
+          "longest": 11.0
+        },
+        {
+          "week": "2023-08-27",
+          "miles": 46.8,
+          "runs": 7,
+          "longest": 12.9
+        },
+        {
+          "week": "2023-09-03",
+          "miles": 35.1,
+          "runs": 6,
+          "longest": 7.8
+        },
+        {
+          "week": "2023-09-10",
+          "miles": 60.0,
+          "runs": 9,
+          "longest": 17.7
+        },
+        {
+          "week": "2023-09-17",
+          "miles": 37.2,
+          "runs": 6,
+          "longest": 7.9
+        },
+        {
+          "week": "2023-09-24",
+          "miles": 52.3,
+          "runs": 6,
+          "longest": 16.2
+        },
+        {
+          "week": "2023-10-01",
+          "miles": 55.2,
+          "runs": 6,
+          "longest": 18.0
+        },
+        {
+          "week": "2023-10-08",
+          "miles": 51.7,
+          "runs": 6,
+          "longest": 19.0
+        },
+        {
+          "week": "2023-10-15",
+          "miles": 50.7,
+          "runs": 6,
+          "longest": 19.7
+        },
+        {
+          "week": "2023-10-22",
+          "miles": 47.1,
+          "runs": 6,
+          "longest": 10.2
+        },
+        {
+          "week": "2023-10-29",
+          "miles": 18.9,
+          "runs": 5,
+          "longest": 5.5
+        }
+      ],
+      "notable": [
+        {
+          "date": "2023-10-19",
+          "name": "Progression to MP - Last Long One",
+          "miles": 19.73,
+          "pace": 8.45
+        },
+        {
+          "date": "2023-10-13",
+          "name": "10M easy, 7M progression",
+          "miles": 19.03,
+          "pace": 8.62
+        },
+        {
+          "date": "2023-10-07",
+          "name": "Morning Run",
+          "miles": 18.04,
+          "pace": 8.87
+        },
+        {
+          "date": "2023-09-16",
+          "name": "Morning Run",
+          "miles": 17.7,
+          "pace": 8.86
+        },
+        {
+          "date": "2023-09-30",
+          "name": "Morning Run",
+          "miles": 16.19,
+          "pace": 8.98
+        },
+        {
+          "date": "2023-08-19",
+          "name": "PPTC group run to summer streets",
+          "miles": 16.01,
+          "pace": 9.06
+        },
+        {
+          "date": "2023-08-13",
+          "name": "Morning Run",
+          "miles": 13.86,
+          "pace": 8.97
+        },
+        {
+          "date": "2023-08-05",
+          "name": "w/ Jennie and Karl 👋 ",
+          "miles": 13.37,
+          "pace": 9.32
+        }
+      ]
+    }
+  },
+  {
+    "id": "chicago-2024",
+    "year": 2024,
+    "race": "Chicago Marathon",
+    "date": "2024-10-13",
+    "finish": "3:24:51",
+    "half": "1:43:31",
+    "split": "−2:11",
+    "context": "Only negative split; best execution",
+    "goal": true,
+    "cycle": {
+      "start": "2024-07-07",
+      "totalMiles": 801.7,
+      "avgWeek": 57.3,
+      "peakWeek": 75.8,
+      "runs": 88,
+      "activeDays": 84,
+      "runs10": 33,
+      "runs12": 20,
+      "runs14": 16,
+      "runs18": 5,
+      "runs20": 2,
+      "longest": 21.88,
+      "weekly": [
+        {
+          "week": "2024-07-07",
+          "miles": 47.9,
+          "runs": 6,
+          "longest": 12.9
+        },
+        {
+          "week": "2024-07-14",
+          "miles": 42.6,
+          "runs": 5,
+          "longest": 13.9
+        },
+        {
+          "week": "2024-07-21",
+          "miles": 48.9,
+          "runs": 6,
+          "longest": 11.1
+        },
+        {
+          "week": "2024-07-28",
+          "miles": 66.5,
+          "runs": 9,
+          "longest": 16.1
+        },
+        {
+          "week": "2024-08-04",
+          "miles": 48.5,
+          "runs": 7,
+          "longest": 14.1
+        },
+        {
+          "week": "2024-08-11",
+          "miles": 66.5,
+          "runs": 6,
+          "longest": 17.6
+        },
+        {
+          "week": "2024-08-18",
+          "miles": 74.0,
+          "runs": 7,
+          "longest": 18.0
+        },
+        {
+          "week": "2024-08-25",
+          "miles": 56.5,
+          "runs": 6,
+          "longest": 14.4
+        },
+        {
+          "week": "2024-09-01",
+          "miles": 67.7,
+          "runs": 6,
+          "longest": 18.4
+        },
+        {
+          "week": "2024-09-08",
+          "miles": 75.8,
+          "runs": 6,
+          "longest": 21.1
+        },
+        {
+          "week": "2024-09-15",
+          "miles": 74.4,
+          "runs": 6,
+          "longest": 21.9
+        },
+        {
+          "week": "2024-09-22",
+          "miles": 46.0,
+          "runs": 6,
+          "longest": 12.1
+        },
+        {
+          "week": "2024-09-29",
+          "miles": 56.0,
+          "runs": 6,
+          "longest": 17.8
+        },
+        {
+          "week": "2024-10-06",
+          "miles": 30.3,
+          "runs": 6,
+          "longest": 6.5
+        }
+      ],
+      "notable": [
+        {
+          "date": "2024-09-21",
+          "name": "PPTC group run to Roosevelt Island and back",
+          "miles": 21.88,
+          "pace": 8.84
+        },
+        {
+          "date": "2024-09-08",
+          "name": "long run despues 5th avenue mile",
+          "miles": 21.11,
+          "pace": 8.76
+        },
+        {
+          "date": "2024-09-01",
+          "name": "Long w/ 12M @ MP",
+          "miles": 18.41,
+          "pace": 8.23
+        },
+        {
+          "date": "2024-09-13",
+          "name": "5K tempo turned into a long run",
+          "miles": 18.28,
+          "pace": 8.3
+        },
+        {
+          "date": "2024-08-18",
+          "name": "Roosevelt Island",
+          "miles": 18.03,
+          "pace": 8.96
+        },
+        {
+          "date": "2024-09-29",
+          "name": "MP confidence scale: 8.5/10",
+          "miles": 17.78,
+          "pace": 8.23
+        },
+        {
+          "date": "2024-08-11",
+          "name": "long w/ 10M @ MP",
+          "miles": 17.63,
+          "pace": 8.33
+        },
+        {
+          "date": "2024-08-23",
+          "name": "To Brighton and back",
+          "miles": 17.02,
+          "pace": 9.0
+        }
+      ]
+    }
+  },
+  {
+    "id": "nyc-2025",
+    "year": 2025,
+    "race": "NYC Marathon",
+    "date": "2025-11-02",
+    "finish": "3:31:00*",
+    "half": null,
+    "split": null,
+    "context": "Goal race; finish currently approximate",
+    "goal": true,
+    "cycle": {
+      "start": "2025-07-27",
+      "totalMiles": 764.6,
+      "avgWeek": 54.6,
+      "peakWeek": 77.8,
+      "runs": 94,
+      "activeDays": 91,
+      "runs10": 24,
+      "runs12": 18,
+      "runs14": 9,
+      "runs18": 3,
+      "runs20": 2,
+      "longest": 21.85,
+      "weekly": [
+        {
+          "week": "2025-07-27",
+          "miles": 30.1,
+          "runs": 4,
+          "longest": 13.1
+        },
+        {
+          "week": "2025-08-03",
+          "miles": 47.0,
+          "runs": 7,
+          "longest": 11.3
+        },
+        {
+          "week": "2025-08-10",
+          "miles": 54.7,
+          "runs": 7,
+          "longest": 15.2
+        },
+        {
+          "week": "2025-08-17",
+          "miles": 61.3,
+          "runs": 7,
+          "longest": 16.9
+        },
+        {
+          "week": "2025-08-24",
+          "miles": 46.8,
+          "runs": 7,
+          "longest": 12.1
+        },
+        {
+          "week": "2025-08-31",
+          "miles": 65.1,
+          "runs": 7,
+          "longest": 17.5
+        },
+        {
+          "week": "2025-09-07",
+          "miles": 62.7,
+          "runs": 7,
+          "longest": 17.7
+        },
+        {
+          "week": "2025-09-14",
+          "miles": 66.9,
+          "runs": 9,
+          "longest": 12.6
+        },
+        {
+          "week": "2025-09-21",
+          "miles": 67.8,
+          "runs": 7,
+          "longest": 18.5
+        },
+        {
+          "week": "2025-09-28",
+          "miles": 68.2,
+          "runs": 7,
+          "longest": 21.1
+        },
+        {
+          "week": "2025-10-05",
+          "miles": 77.8,
+          "runs": 7,
+          "longest": 21.9
+        },
+        {
+          "week": "2025-10-12",
+          "miles": 46.2,
+          "runs": 5,
+          "longest": 17.6
+        },
+        {
+          "week": "2025-10-19",
+          "miles": 35.1,
+          "runs": 7,
+          "longest": 7.2
+        },
+        {
+          "week": "2025-10-26",
+          "miles": 35.0,
+          "runs": 6,
+          "longest": 11.5
+        }
+      ],
+      "notable": [
+        {
+          "date": "2025-10-11",
+          "name": "PPTC to Roosevelt Island and back",
+          "miles": 21.85,
+          "pace": 8.6
+        },
+        {
+          "date": "2025-09-28",
+          "name": "the longest of long runs",
+          "miles": 21.13,
+          "pace": 8.43
+        },
+        {
+          "date": "2025-09-21",
+          "name": "10M @ MP",
+          "miles": 18.5,
+          "pace": 8.17
+        },
+        {
+          "date": "2025-09-07",
+          "name": "5th Ave Mile and the long way home",
+          "miles": 17.7,
+          "pace": 8.97
+        },
+        {
+          "date": "2025-10-18",
+          "name": "última carrera larga",
+          "miles": 17.62,
+          "pace": 8.24
+        },
+        {
+          "date": "2025-08-31",
+          "name": "Long / 8M @ MP",
+          "miles": 17.54,
+          "pace": 8.44
+        },
+        {
+          "date": "2025-10-05",
+          "name": "long",
+          "miles": 17.06,
+          "pace": 8.55
+        },
+        {
+          "date": "2025-08-22",
+          "name": "long / 4M @ MP",
+          "miles": 16.87,
+          "pace": 8.62
+        }
+      ]
+    }
+  }
+]

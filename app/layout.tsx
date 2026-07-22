@@ -1,0 +1,3 @@
+import "./globals.css"; import Link from "next/link";
+export const metadata={title:"Luna Marathon Atlas",description:"A personal marathon history and training analytics dashboard"};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body><header><Link className="brand" href="/">LUNA / MARATHON ATLAS</Link><nav><Link href="/">Overview</Link><Link href="/marathons">Marathons</Link><Link href="/compare">Compare</Link></nav></header><main>{children}</main><footer>Built from Garmin and Strava exports · Prototype v0.1</footer></body></html>}
