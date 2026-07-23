@@ -1,1 +1,211 @@
-import {PRE_RACE_WINDOW_WEEKS} from "@/analytics/training-window"; import {notFound} from "next/navigation"; import races from "@/data/marathons.json"; import {Marathon} from "@/lib/types"; import WeeklyBars from "@/components/WeeklyBars"; export function generateStaticParams(){return (races as Marathon[]).map(r=>({id:r.id}))} export default async function Page({params}:{params:Promise<{id:string}>}){const {id}=await params;const r=(races as Marathon[]).find(x=>x.id===id);if(!r)notFound();return <><div className="eyebrow">{r.date}</div><h1 style={{fontSize:72}}>{r.race}<br/>{r.year}</h1><div className="grid"><div className="card stat">Finish<b>{r.finish}</b></div><div className="card stat">Half<b>{r.half||'—'}</b></div><div className="card stat">Split<b>{r.split||'—'}</b></div><div className="card stat">Role<b>{r.goal?'Goal':'Context'}</b></div></div><h2>Race context</h2><div className="card"><p className="lede">{r.context}</p></div>{r.cycle?<><h2>{PRE_RACE_WINDOW_WEEKS}-week build</h2><div className="grid"><div className="card stat">Average/week<b>{r.cycle.avgWeek}</b></div><div className="card stat">Peak week<b>{r.cycle.peakWeek}</b></div><div className="card stat">14+ runs<b>{r.cycle.runs14}</b></div><div className="card stat">Longest<b>{r.cycle.longest}</b></div></div><h2>Weekly mileage</h2><WeeklyBars cycle={r.cycle}/><div className="detail-grid"><div><h2>Cycle metrics</h2><div className="card"><table className="metric-table"><tbody>{Object.entries({"Total miles":r.cycle.totalMiles,"Runs":r.cycle.runs,"Active days":r.cycle.activeDays,"10+ mile runs":r.cycle.runs10,"12+ mile runs":r.cycle.runs12,"18+ mile runs":r.cycle.runs18,"20+ mile runs":r.cycle.runs20}).map(([k,v])=><tr key={k}><td>{k}</td><td><b>{v}</b></td></tr>)}</tbody></table></div></div><div><h2>Longest activities</h2><div className="card"><table className="metric-table"><tbody>{r.cycle.notable.map(n=><tr key={n.date+n.name}><td>{n.date}<br/><span className="muted">{n.name}</span></td><td><b>{n.miles} mi</b></td></tr>)}</tbody></table></div></div></div></>:<><h2>Training data</h2><div className="notice">The available exports do not cover this race’s full {PRE_RACE_WINDOW_WEEKS}-week build. Race history is preserved, but training metrics are intentionally left blank.</div></>}</>}
+import { PRE_RACE_WINDOW_WEEKS } from "@/analytics/training-window";
+import WeeklyBars from "@/components/WeeklyBars";
+import racesJson from "@/data/marathons.json";
+import {
+  resolveTrainingCycle,
+  type CycleMetricDelta,
+} from "@/lib/training-cycle-data";
+import type { Marathon } from "@/lib/types";
+import { notFound } from "next/navigation";
+
+const races = racesJson as Marathon[];
+
+export function generateStaticParams() {
+  return races.map((race) => ({ id: race.id }));
+}
+
+function DeltaTable({ deltas }: { deltas: CycleMetricDelta[] }) {
+  if (deltas.length === 0) return null;
+
+  return (
+    <section>
+      <h2>Engine validation</h2>
+
+      <div className="notice">
+        Chicago 2024 is calculated from the activity dataset. The original
+        precomputed JSON remains available as a migration baseline.
+      </div>
+
+      <div className="card" style={{ marginTop: 14, overflowX: "auto" }}>
+        <table className="metric-table">
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>Generated</th>
+              <th>Baseline</th>
+              <th>Delta</th>
+            </tr>
+          </thead>
+          <tbody>
+            {deltas.map((entry) => (
+              <tr key={entry.metric}>
+                <td>{entry.metric}</td>
+                <td>{entry.generated}</td>
+                <td>{entry.baseline}</td>
+                <td>
+                  {entry.delta > 0 ? "+" : ""}
+                  {entry.delta}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
+
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  const race = races.find((candidate) => candidate.id === id);
+
+  if (!race) notFound();
+
+  const resolved = resolveTrainingCycle(race);
+  const cycle = resolved.cycle;
+
+  return (
+    <>
+      <section className="hero">
+        <div>
+          <p className="eyebrow">
+            {race.date} · {race.goal ? "Goal race" : "Context race"}
+          </p>
+          <h1>{race.race}</h1>
+          <p className="lede">{race.context}</p>
+        </div>
+
+        <div className="card stat">
+          <span className="muted">{race.year} finish</span>
+          <b>{race.finish}</b>
+          {race.split && (
+            <span
+              className={
+                race.split.toLowerCase().includes("negative")
+                  ? "split-good"
+                  : "muted"
+              }
+            >
+              {race.split}
+            </span>
+          )}
+        </div>
+      </section>
+
+      <h2>Race summary</h2>
+      <section className="grid">
+        <div className="card stat">
+          <span className="muted">Finish</span>
+          <b>{race.finish}</b>
+        </div>
+        <div className="card stat">
+          <span className="muted">Half</span>
+          <b>{race.half || "—"}</b>
+        </div>
+        <div className="card stat">
+          <span className="muted">Split</span>
+          <b style={{ fontSize: 22 }}>{race.split || "—"}</b>
+        </div>
+        <div className="card stat">
+          <span className="muted">Role</span>
+          <b style={{ fontSize: 22 }}>{race.goal ? "Goal" : "Context"}</b>
+        </div>
+      </section>
+
+      {cycle ? (
+        <>
+          <h2>{PRE_RACE_WINDOW_WEEKS}-week build</h2>
+
+          {resolved.source === "engine" && (
+            <div className="notice">
+              <strong>Source:</strong> generated from the versioned activity
+              dataset by the Training Cycle Engine.
+            </div>
+          )}
+
+          <section className="grid" style={{ marginTop: 14 }}>
+            <div className="card stat">
+              <span className="muted">Average/week</span>
+              <b>{cycle.avgWeek}</b>
+            </div>
+            <div className="card stat">
+              <span className="muted">Peak week</span>
+              <b>{cycle.peakWeek}</b>
+            </div>
+            <div className="card stat">
+              <span className="muted">14+ mile runs</span>
+              <b>{cycle.runs14}</b>
+            </div>
+            <div className="card stat">
+              <span className="muted">Longest run</span>
+              <b>{cycle.longest}</b>
+            </div>
+          </section>
+
+          <h2>Weekly mileage</h2>
+          <WeeklyBars cycle={cycle} />
+
+          <section className="detail-grid">
+            <div>
+              <h2>Cycle metrics</h2>
+              <div className="card">
+                <table className="metric-table">
+                  <tbody>
+                    {Object.entries({
+                      "Total miles": cycle.totalMiles,
+                      Runs: cycle.runs,
+                      "Active days": cycle.activeDays,
+                      "10+ mile runs": cycle.runs10,
+                      "12+ mile runs": cycle.runs12,
+                      "18+ mile runs": cycle.runs18,
+                      "20+ mile runs": cycle.runs20,
+                    }).map(([label, value]) => (
+                      <tr key={label}>
+                        <th>{label}</th>
+                        <td>{value}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div>
+              <h2>Longest activities</h2>
+              <div className="card">
+                <table className="metric-table">
+                  <tbody>
+                    {cycle.notable.map((run) => (
+                      <tr key={`${run.date}-${run.name}`}>
+                        <td>
+                          <strong>{run.date}</strong>
+                          <div className="muted">{run.name}</div>
+                        </td>
+                        <td>{run.miles} mi</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <DeltaTable deltas={resolved.deltas} />
+        </>
+      ) : (
+        <>
+          <h2>Training data</h2>
+          <div className="notice">
+            The available exports do not cover this race&apos;s full{" "}
+            {PRE_RACE_WINDOW_WEEKS}-week build. Race history is preserved, but
+            training metrics are intentionally left blank.
+          </div>
+        </>
+      )}
+    </>
+  );
+}
