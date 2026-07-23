@@ -193,8 +193,6 @@ export default async function Page({
               </div>
             </div>
           </section>
-
-          <DeltaTable deltas={resolved.deltas} />
         </>
       ) : (
         <>

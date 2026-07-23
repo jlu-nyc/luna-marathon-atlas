@@ -1,18 +1,14 @@
-import {
-  buildTrainingCycle,
-  type Activity,
-  type TrainingCycle,
-} from "@/analytics/training-cycle";
-import { getPreRaceWindow } from "@/analytics/training-window";
+import { buildTrainingCycle, type Activity, type TrainingCycle } from "@/analytics/training-cycle";
 import activitiesJson from "@/data/activities.json";
 import type { Cycle, Marathon } from "@/lib/types";
 
 const activities = activitiesJson as Activity[];
 
-export type ActivityCoverage = {
-  firstActivityDate: string | null;
-  lastActivityDate: string | null;
-};
+/**
+ * Chicago 2024 is the first controlled migration from precomputed JSON
+ * to the tested Training Cycle Engine.
+ */
+export const ENGINE_ENABLED_RACE_IDS = new Set(["chicago-2024"]);
 
 export type CycleMetricDelta = {
   metric: string;
@@ -28,62 +24,10 @@ export type ResolvedTrainingCycle = {
   deltas: CycleMetricDelta[];
 };
 
-const DAY_MS = 24 * 60 * 60 * 1000;
-
 const round = (value: number, digits = 1): number => {
   const factor = 10 ** digits;
   return Math.round((value + Number.EPSILON) * factor) / factor;
 };
-
-function previousIsoDate(value: string): string {
-  const date = new Date(`${value}T00:00:00Z`);
-
-  if (Number.isNaN(date.getTime())) {
-    throw new Error(`Invalid ISO date: ${value}`);
-  }
-
-  return new Date(date.getTime() - DAY_MS).toISOString().slice(0, 10);
-}
-
-export function getActivityCoverage(
-  dataset: Activity[] = activities,
-): ActivityCoverage {
-  const dates = dataset
-    .map((activity) => activity.date)
-    .filter(Boolean)
-    .sort((a, b) => a.localeCompare(b));
-
-  return {
-    firstActivityDate: dates.at(0) ?? null,
-    lastActivityDate: dates.at(-1) ?? null,
-  };
-}
-
-/**
- * A race is engine-eligible only when the versioned activity export spans the
- * complete pre-race window through the day before the race.
- *
- * This checks dataset coverage, not whether every week contains an activity:
- * zero-mile weeks remain valid training data.
- */
-export function hasCompleteActivityCoverage(
-  raceDate: string,
-  dataset: Activity[] = activities,
-): boolean {
-  const coverage = getActivityCoverage(dataset);
-
-  if (!coverage.firstActivityDate || !coverage.lastActivityDate) {
-    return false;
-  }
-
-  const window = getPreRaceWindow(raceDate);
-  const finalTrainingDate = previousIsoDate(raceDate);
-
-  return (
-    coverage.firstActivityDate <= window.start &&
-    coverage.lastActivityDate >= finalTrainingDate
-  );
-}
 
 export function compareCycles(
   generated: TrainingCycle,
@@ -113,11 +57,10 @@ export function compareCycles(
 
 export function resolveTrainingCycle(
   marathon: Marathon,
-  dataset: Activity[] = activities,
 ): ResolvedTrainingCycle {
   const baseline = marathon.cycle;
 
-  if (!hasCompleteActivityCoverage(marathon.date, dataset)) {
+  if (!ENGINE_ENABLED_RACE_IDS.has(marathon.id)) {
     return {
       cycle: baseline,
       source: baseline ? "baseline" : "unavailable",
@@ -126,7 +69,7 @@ export function resolveTrainingCycle(
     };
   }
 
-  const generated = buildTrainingCycle(dataset, marathon.date);
+  const generated = buildTrainingCycle(activities, marathon.date);
 
   return {
     cycle: generated,
